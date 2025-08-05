@@ -1,20 +1,27 @@
-# Common Production Issues in Backend Systems
+# Common Production Issues – Backend Systems
 
-Production issues often differ from local or test environments.
-Understanding common failure patterns helps in faster resolution.
+## 1. NullPointerException
+Often caused by missing validation or unexpected null responses
+from external systems.
 
-## Common Issues
-- NullPointerExceptions due to unexpected data
-- Slow queries caused by missing indexes
-- Thread starvation under load
-- Memory leaks from improper object lifecycle handling
+**Prevention**
+- Defensive null checks
+- Validation at API boundaries
+- Proper Optional usage
 
-## Debugging Approach
-- Analyze logs before changing code
-- Reproduce issues in lower environments if possible
-- Add targeted logging instead of broad logs
-- Validate assumptions about input data
+## 2. Performance degradation
+Usually caused by:
+- Missing indexes
+- N+1 queries
+- Inefficient loops
 
-## Key Lesson
-Most production bugs are caused by edge cases and incorrect assumptions,
-not by complex logic.
+## 3. Memory issues
+- Unreleased resources
+- Large objects held in memory
+- Incorrect cache configuration
+
+## Debugging approach
+1. Reproduce issue locally
+2. Check logs and metrics
+3. Identify recent changes
+4. Apply minimal fix
