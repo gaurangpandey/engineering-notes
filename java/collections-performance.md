@@ -16,3 +16,9 @@
 ## Performance Tip
 Prefer ArrayList over LinkedList for read-heavy operations
 due to better cache locality.
+
+## Interview tip
+Always justify data structure choice based on:
+- Access pattern
+- Mutation frequency
+- Thread safety requirements
