@@ -19,3 +19,7 @@ pagination handled by ORM frameworks like JPA.
 ## Key Takeaway
 For large tables and performance-critical APIs, prefer database-level
 pagination and carefully inspect generated SQL when using JPA.
+
+## Common Pitfall
+Using OFFSET pagination on large tables can cause performance degradation.
+For high-traffic APIs, keyset pagination is often a better choice.
