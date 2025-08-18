@@ -25,3 +25,7 @@ Usually caused by:
 2. Check logs and metrics
 3. Identify recent changes
 4. Apply minimal fix
+
+## Practical Advice
+Always confirm whether an issue is data-related or code-related
+before attempting a fix.
