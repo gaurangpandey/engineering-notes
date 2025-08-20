@@ -12,3 +12,7 @@
 - Prefer ArrayList for read-heavy operations
 - Use LinkedList only when frequent insertions/removals are required
 - Use TreeMap only when sorted keys are necessary
+
+## Performance Tip
+Prefer ArrayList over LinkedList for read-heavy operations
+due to better cache locality.

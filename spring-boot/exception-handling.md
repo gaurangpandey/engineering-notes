@@ -23,3 +23,7 @@ Well-designed exception handling improves:
 - API reliability
 - Client experience
 - Debuggability in production
+
+## Best Practice
+Always return meaningful error responses instead of
+generic stack traces.
